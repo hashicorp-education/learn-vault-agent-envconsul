@@ -4,7 +4,7 @@ env_template "CERT" {
 }
 
 exec {
-	command = ["./pki-demo.sh"]
+	command 				  = ["./pki-demo.sh"]
 	restart_on_secret_changes = "always"
     restart_stop_signal       = "SIGTERM"
 }
